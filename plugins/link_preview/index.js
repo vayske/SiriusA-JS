@@ -9,6 +9,7 @@ const urlTag = "[property='og:url']"
 
 function link_preview(mirai) {
     mirai.on("GroupMessage", (msg) => {
+        console.log(msg)
         let url = check.re(msg.plain, pattern)
         if (url) {
             axios.get(url[0]).then((html) => {

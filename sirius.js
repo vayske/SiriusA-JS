@@ -26,6 +26,7 @@ async function loadPlugins(mirai) {
     Object.keys(plugin).forEach(func => {
       plugin[func](mirai)
     })
+    console.log(`Loaded ${plugin}\n`)
   })
 }
 
