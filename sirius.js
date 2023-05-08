@@ -3,7 +3,7 @@ const path = require('node:path')
 const { Mirai } = require('mirai-ts')
 const yaml = require('js-yaml')
 const { glob } = require('glob')
-const prompt = require("prompt-sync")
+const prompt = require("prompt-sync")({ sigint: true })
 
 const qq = prompt("Enter QQ: ")
 
