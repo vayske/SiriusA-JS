@@ -11,7 +11,7 @@ const setting = yaml.load(
   fs.readFileSync(
     path.resolve(
       __dirname,
-      '../bot/mirai/mirai/config/net.mamoe.mirai-api-http/setting.yml',
+      '../mirai/mirai/config/net.mamoe.mirai-api-http/setting.yml',
     ),
     'utf8',
   ),
