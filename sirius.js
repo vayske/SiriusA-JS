@@ -2,7 +2,8 @@ const fs = require('node:fs')
 const path = require('node:path')
 const { Mirai } = require('mirai-ts')
 const yaml = require('js-yaml')
-const { glob } = require("glob")
+const { glob } = require('glob')
+const prompt = require("prompt-sync")
 
 const qq = prompt("Enter QQ: ")
 
